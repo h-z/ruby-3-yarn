@@ -1,4 +1,4 @@
-FROM ruby:3.1.0
+FROM ruby:3.2.0
 LABEL maintainer="hz@muszaki.info"
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -

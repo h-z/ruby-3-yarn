@@ -2,6 +2,9 @@
   "name": "rails7-yarn",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "lint": "eslint --ext .js,.vue app/javascript",
     "lint:fix": "eslint --fix --ext .js,.vue app/javascript",
@@ -11,19 +14,16 @@
   },
   "dependencies": {
     "@mdi/font": "~6.1.95",
-    "@rails/actioncable": "^7.0.1",
-    "@rails/activestorage": "^7.0.1",
-    "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.2",
     "@types/axios": "^0.14.0",
     "axios": "^0.24.0",
     "babel-plugin-root-import": "^6.6.0",
     "classnames": "~2.3.1",
+    "dayjs": "^1.10.7",
     "file-loader": "^6.1.1",
     "fontsource-roboto": "^4.0.0",
     "i18n-js": "^3.7.1",
     "jwt-decode": "^3.1.1",
-    "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "rollbar": "^2.24.0",
     "sass": "~1.32",
@@ -58,8 +58,6 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.17.0",
-    "fibers": "^5.0.0",
-    "is-docker": "^3.0.0",
     "jasmine-core": "^3.9.0",
     "karma": "^6.3.4",
     "karma-chrome-launcher": "^3.1.0",
@@ -71,6 +69,7 @@
     "karma-webpack": "^5.0.0",
     "puppeteer": "^10.2.0",
     "vue-cli-plugin-vuetify": "^2.4.2",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "~3"
   }
 }
