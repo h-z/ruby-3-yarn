@@ -1,9 +1,9 @@
 {
-  "name": "rails7-yarn",
+  "name": "rails7-yar",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "14.x"
+  "engines" : {
+    "node" : "^20.x"
   },
   "scripts": {
     "lint": "eslint --ext .js,.vue app/javascript",
@@ -13,9 +13,11 @@
     "karma": "NODE_ENV=test karma start --browsers Opera"
   },
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@mdi/font": "~6.1.95",
     "@rails/webpacker": "5.4.2",
     "@types/axios": "^0.14.0",
+    "@vitejs/plugin-vue2": "^2.3.1",
     "axios": "^0.24.0",
     "babel-plugin-root-import": "^6.6.0",
     "classnames": "~2.3.1",
@@ -26,7 +28,7 @@
     "jwt-decode": "^3.1.1",
     "prop-types": "^15.7.2",
     "rollbar": "^2.24.0",
-    "sass": "~1.32",
+    "sass": "^1.69.7",
     "sass-loader": "^10",
     "v-currency-field": "^3.1.1",
     "vue": "^2.6.14",
@@ -68,6 +70,9 @@
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^5.0.0",
     "puppeteer": "^10.2.0",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.0.0",
+    "vite-plugin-ruby": "^5.0.0",
     "vue-cli-plugin-vuetify": "^2.4.2",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "~3"

@@ -14,6 +14,12 @@ gem 'devise-jwt'
 
 gem 'dotenv-rails', groups: %i[development test]
 
+gem 'elasticsearch', '7.13.0'
+
+gem 'elasticsearch-model'
+
+gem 'elasticsearch-rails'
+
 gem 'pundit'
 
 gem 'paper_trail'
@@ -23,6 +29,8 @@ gem 'i18n-js'
 gem 'countries', require: 'countries/global'
 
 gem 'acts_as_list'
+
+gem 'logtail-rails', '~> 0.2'
 
 gem 'net-smtp', require: false
 
@@ -50,8 +58,7 @@ gem 'rails', '~> 7'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma'
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 5.4'
+gem 'vite_rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -94,7 +101,7 @@ group :test do
   gem 'pundit-matchers'
   gem 'rails-controller-testing'
   gem 'rspec-its'
-  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
